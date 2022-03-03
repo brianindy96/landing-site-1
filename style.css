@@ -23,7 +23,7 @@ body{
 /* Content */
 
 .container{
-    height: 80vh;
+    height: 90vh;
     width: 80vw;
     border-radius: 30px;
     background-color: white;
@@ -34,12 +34,12 @@ body{
     display: flex;
     flex-direction: column;
     padding-right: 40px;
+    padding-bottom: 0;
 }
 
 /* Header */
 
 .header{
-    border-bottom: 1px solid black;
     height: 15%;
     display: flex;
     justify-content: center;
@@ -93,6 +93,7 @@ a#link:hover{
 .main{
     flex: 1;
     display: flex;
+    overflow: hidden;
 }
 
 .main-1,
@@ -101,6 +102,7 @@ a#link:hover{
     display: flex;
 }
 
+/* Main-1 left side */
 .main-1{
     justify-content: center;
     align-items: center;
@@ -112,12 +114,79 @@ a#link:hover{
     background-size: none;
 }
 
-img{
+.main-1 img{
     width: 600px;
     height: 600px;
     object-fit: cover;
 }
 
+/* Main-2 right side */
+
+.main-2{
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.top-content{
+    font-size: 2rem;
+    flex: 1;
+    padding-left: 30px;
+}
+
+.top-content h1{
+    margin-bottom: 5px;
+    color: red;
+}
+
+.top-content h2{
+    margin-top: 30px;
+    color: brown;
+}
+
+.top-content h3{
+    margin-top: 20px;
+}
+
+.contact{
+    flex: 1;
+    display: flex;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+}
+
+.contact-form{
+    flex: 1;
+}
+
+.contact-form p{
+    margin-top: 10px;
+}
+
+.contact-form button{
+    margin-top: 20px;
+    padding: 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.07s ease-in;
+}
+
+.contact-form button:hover{
+    transform: scale(1.1);
+}
+
+.contact-form li{
+    list-style: inside;
+    margin-top: 20px;
+    font-size: 28px;
+}
+
+/* Footer */
 .footer{
-    height: 7%;
+    height: 10%;
 }
