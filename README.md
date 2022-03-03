@@ -1,5 +1,5 @@
 # landing-site-1
-Just a basic landing site, sharpening my HTML-CSS skills
+Just a non-responsive basic landing site, sharpening my HTML-CSS skills
 
 
 
