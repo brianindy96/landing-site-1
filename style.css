@@ -5,6 +5,7 @@
 
 
 *{
+    font-family: "Roboto",sans-serif;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -19,11 +20,68 @@ body{
     background-image: linear-gradient(var(--nature),var(--growth))
 }
 
+/* Content */
+
 .container{
     height: 80vh;
     width: 80vw;
-    border: 1px solid black;
     border-radius: 30px;
     background-color: rgb(252, 252, 252);
     padding: 20px;
+    box-shadow: 2px 1px 5px;
+    box-sizing: border-box;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+/* Header */
+
+.header{
+    border-bottom: 1px solid black;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    font-size: 3em;
+    letter-spacing: 3px;
+    font-weight: 900;
+}
+
+.links{
+    margin-left: auto;
+    outline: hidden;
+}
+
+a{
+    margin-right: 50px;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.links a{
+    transition: 0.3s ease-in;
+}
+
+#box-link{
+    border-radius: 20px;
+    padding: 20px;
+    background-color: #99daa9;
+    font-weight: 900;
+    transition: 0.3s ease-in;
+}
+
+/* Header Effects */
+
+a#link:hover{
+    font-size: 19px;
+}
+
+#box-link:hover{
+    font-size: 19px;
+    letter-spacing: 1px;
 }
