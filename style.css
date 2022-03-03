@@ -26,11 +26,13 @@ body{
     height: 80vh;
     width: 80vw;
     border-radius: 30px;
-    background-color: rgb(252, 252, 252);
+    background-color: white;
     padding: 20px;
     box-shadow: 2px 1px 5px;
     box-sizing: border-box;
     padding-left: 40px;
+    display: flex;
+    flex-direction: column;
     padding-right: 40px;
 }
 
@@ -84,4 +86,38 @@ a#link:hover{
 #box-link:hover{
     font-size: 19px;
     letter-spacing: 1px;
+}
+
+/* Main Content */
+
+.main{
+    flex: 1;
+    display: flex;
+}
+
+.main-1,
+.main-2{
+    flex: 1;
+    display: flex;
+}
+
+.main-1{
+    justify-content: center;
+    align-items: center;
+}
+
+.pic-container{
+    height: 600px;
+    width: 600px;
+    background-size: none;
+}
+
+img{
+    width: 600px;
+    height: 600px;
+    object-fit: cover;
+}
+
+.footer{
+    height: 7%;
 }
